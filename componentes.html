@@ -6,16 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Componentes - JuaniSShop</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Archivo CSS externo -->
     <link rel="stylesheet" href="assets/css/inicio.css">
-    <link rel="stylesheet" href="assets/css/componentes.css"> <!-- Archivo CSS para esta página -->
+    <link rel="stylesheet" href="assets/css/componentes.css"> 
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-navbar">
         <a class="navbar-brand shadow-text" href="#">JuaniSShop</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +33,11 @@
         </div>
     </nav>
 
-    <!-- Imagen de fondo -->
     <img src="assets/Imagenes/banner.jpg" alt="Imagen de fondo" class="background-image">
     
     <div class="container product-container">
         <div class="row">
 
-            <!-- Fila de componentes -->
             <div class="col-md-4">
                 <a href="contenido_no_disponible2.html" class="product-card">
                     <img src="assets/Imagenes/ubicacion.png" alt="ubicacion">
@@ -64,7 +59,6 @@
                     <p>Enterate de lo nuevo que tendremos para ti</p>
                 </a>
             </div>
-            <!-- Repetir para más componentes -->
             <div class="col-md-4">
                 <a href="contenido_no_disponible2.html" class="product-card">
                     <img src="assets/Imagenes/pagos.png" alt="metodos de pago">
@@ -79,24 +73,20 @@
                     <p>Revisa nuestros metodos de envios</p>
                 </a>
             </div>
-            <!-- Más componentes se pueden agregar aquí -->
         </div>
     </div>
 
-    <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 JuaniSShop. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
-        /* Estilo para la imagen de fondo */
         .background-image {
             position: fixed;
             top: 0;
@@ -104,22 +94,20 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1; /* Asegura que esté detrás del contenido */
-            opacity: 1; /* Opción para ajustar la visibilidad */
+            z-index: -1;
+            opacity: 1;
         }
 
-        /* Contenedor de componentes */
         .product-container {
-            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 8px;
-            margin: 50px auto; /* Centrado con espacio superior e inferior */
-            max-width: 700px; /* Ancho máximo */
-            position: relative; /* Para que el z-index funcione */
-            z-index: 1; /* Asegura que esté por delante de la imagen */
+            margin: 50px auto;
+            max-width: 700px;
+            position: relative;
+            z-index: 1;
         }
 
-        /* Estilo de las tarjetas de componentes */
         .product-card {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -128,13 +116,13 @@
             text-align: center;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
-            transition: transform 0.3s ease; /* Para la animación de levantamiento */
-            display: block; /* Para que el enlace ocupe toda la tarjeta */
+            transition: transform 0.3s ease;
+            display: block;
         }
 
         .product-card:hover {
-            transform: translateY(-10px); /* Levanta la tarjeta al pasar el mouse */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .product-card img {
@@ -143,18 +131,17 @@
             border-radius: 8px;
         }
 
-        /* Navbar sin fondo */
         .transparent-navbar {
-            background-color: transparent; /* Sin fondo */
-            box-shadow: none; /* Opcional: elimina la sombra */
+            background-color: transparent;
+            box-shadow: none;
         }
 
         .nav-link {
-            color: #ffffff; /* Color del texto de los enlaces */
+            color: #ffffff;
         }
 
         .navbar-brand {
-            color: #ffffff; /* Color del texto del nombre de la tienda */
+            color: #ffffff;
         }
     </style>
 </body>
