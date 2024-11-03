@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Componentes - JuaniSShop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/componentes.css"> <!-- Archivo CSS para esta página -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-navbar">
+        <a class="navbar-brand shadow-text" href="#">JuaniSShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link shadow-text" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shadow-text" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link shadow-text" href="componentes.html">Componentes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Imagen de fondo -->
+    <img src="assets/Imagenes/banner.jpg" alt="Imagen de fondo" class="background-image">
+    
+    <div class="container product-container">
+        <div class="row">
+
+            <!-- Fila de componentes -->
+            <div class="col-md-4">
+                <a href="contenido_no_disponible2.html" class="product-card">
+                    <img src="assets/Imagenes/ubicacion.png" alt="ubicacion">
+                    <h3>Ubicanos</h3>
+                    <p>Ubicanos en Pedro Aguirre Cerda #2232</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="contenido_no_disponible2.html" class="product-card">
+                    <img src="assets/Imagenes/soporte.png" alt="soporte">
+                    <h3>Soprote</h3>
+                    <p>Puedes contactar con nosotros por este medio</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="contenido_no_disponible2.html" class="product-card">
+                    <img src="assets/Imagenes/noticia.png" alt="noticia">
+                    <h3>Noticia</h3>
+                    <p>Enterate de lo nuevo que tendremos para ti</p>
+                </a>
+            </div>
+            <!-- Repetir para más componentes -->
+            <div class="col-md-4">
+                <a href="contenido_no_disponible2.html" class="product-card">
+                    <img src="assets/Imagenes/pagos.png" alt="metodos de pago">
+                    <h3>Metodos de pago</h3>
+                    <p>Revisa nuestros metodos de pagos que estan disponibles</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="contenido_no_disponible2.html" class="product-card">
+                    <img src="assets/Imagenes/envios.png" alt="metodos de envios">
+                    <h3>Metodos de envios</h3>
+                    <p>Revisa nuestros metodos de envios</p>
+                </a>
+            </div>
+            <!-- Más componentes se pueden agregar aquí -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JuaniSShop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Estilo para la imagen de fondo */
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Asegura que esté detrás del contenido */
+            opacity: 1; /* Opción para ajustar la visibilidad */
+        }
+
+        /* Contenedor de componentes */
+        .product-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+            padding: 30px;
+            border-radius: 8px;
+            margin: 50px auto; /* Centrado con espacio superior e inferior */
+            max-width: 700px; /* Ancho máximo */
+            position: relative; /* Para que el z-index funcione */
+            z-index: 1; /* Asegura que esté por delante de la imagen */
+        }
+
+        /* Estilo de las tarjetas de componentes */
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+            transition: transform 0.3s ease; /* Para la animación de levantamiento */
+            display: block; /* Para que el enlace ocupe toda la tarjeta */
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px); /* Levanta la tarjeta al pasar el mouse */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Navbar sin fondo */
+        .transparent-navbar {
+            background-color: transparent; /* Sin fondo */
+            box-shadow: none; /* Opcional: elimina la sombra */
+        }
+
+        .nav-link {
+            color: #ffffff; /* Color del texto de los enlaces */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* Color del texto del nombre de la tienda */
+        }
+    </style>
+</body>
+</html>

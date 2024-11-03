@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio - JuaniSShop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="assets/css/inicio.css"> <!-- Ajuste en la ruta -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-navbar">
+        <a class="navbar-brand shadow-text" href="#" id="pageTitle">JuaniSShop</a> <!-- Sombra aplicada a JuaniSShop -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link shadow-text" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shadow-text" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shadow-text" href="componentes.html">Componentes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image -->
+    <div class="hero-section">
+        <img src="assets/Imagenes/banner.jpg" alt="Imagen de fondo" class="hero-image fade-in"> <!-- Ajuste en la ruta -->
+        <div class="cut-section fade-in">
+            <h2 class="text-center">Descubre Nuestra Colección</h2>
+        </div>
+    </div>
+
+    <!-- Sección para productos debajo de la cut-section -->
+    <div class="products-background">
+        <div class="products-section">
+            <!-- Producto 1 -->
+            <div class="product-item fade-in">
+                <img src="assets/Imagenes/Ropa-de-bebe.jpg" alt="Producto 1" class="fade-in"> <!-- Ajuste en la ruta -->
+                <div class="product-content fade-in">
+                    <h3>Ropa para bebes</h3>
+                    <p>Descripción del producto 1. Es un producto de alta calidad, ideal para diversas ocasiones.</p>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-item fade-in">
+                <img src="assets/Imagenes/ropa-de-niños-y-niñas.jpg" alt="Producto 2" class="fade-in"> <!-- Ajuste en la ruta -->
+                <div class="product-content fade-in">
+                    <h3>Ropa de niños y niñas</h3>
+                    <p>Descripción del producto 2. Perfecto para quienes buscan comodidad y estilo.</p>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-item fade-in">
+                <img src="assets/Imagenes/ropa-formal-hombre-la-ropa-americana-de-marca-chile-787x787.jpg" alt="Producto 3" class="fade-in"> <!-- Ajuste en la ruta -->
+                <div class="product-content fade-in">
+                    <h3>Ropa de adultos</h3>
+                    <p>Descripción del producto 3. Ideal para cualquier época del año, versátil y elegante.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JuaniSShop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <!-- Animación de scroll -->
+    <script>
+        function handleScroll() {
+            var elements = document.querySelectorAll('.fade-in');
+            var windowHeight = window.innerHeight;
+            elements.forEach(function (element) {
+                var positionFromTop = element.getBoundingClientRect().top;
+                if (positionFromTop - windowHeight <= -100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleScroll);
+    </script>
+
+<script>
+    let lastScrollTop = 0;
+    const title = document.getElementById('pageTitle');
+
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            title.classList.add('hidden');
+        } else {
+            title.classList.remove('hidden');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+</script>
+
+</body>
+</html>
